@@ -1,0 +1,25 @@
+
+#Find and return sum of all elements in an array which are either divisible by 2 or by 3.
+def arr(a):
+    sum=0
+    for i in range(n):
+        if a[i] % 2 == 0 or a[i] % 3 == 0:
+            sum+=a[i]
+    print(sum)
+n = int(input())
+a = list(map(int,input().strip().split()))[:n]
+arr(a)
+
+
+#Given an array, update each element of the array by the value obtained by dividing the element by 4 (take only integer part). If the value obtained by dividing element by 4 comes out to be 0, then update element with value -1.
+def arr(a):
+    lst=[]
+    for x in range(n):
+        if a[x]%4!=0:
+            lst.append(-1)
+        else:
+            lst.append(int(a[x]/4))
+    print(lst)
+n = int(input())
+a = list(map(int,input().strip().split()))[:n]
+arr(a)
